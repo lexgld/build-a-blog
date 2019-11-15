@@ -41,9 +41,9 @@ def new_post():
         body_error = ''
 
         if not blog_title:
-            title_error = "Please enter a blog title"
+            title_error = "Blog title cannot be blank"
         if not blog_body:
-            body_error = "Please enter a blog entry"
+            body_error = "Blog entry cannot be blank"
 
         if not body_error and not title_error:
             new_entry = Blog(blog_title, blog_body)     
